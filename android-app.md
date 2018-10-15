@@ -40,20 +40,29 @@ The distribution of the Android app has not been discussed yet.
 ## API
 ### Introduction
 API to read/write access user activity data acquired from the Android devices.
+
 ### Overview
 All the requests are using JSON and the charset is utf-8.
+
 ### Authentication
 OAuth 2.0
+
 ### Error Codes
 Standard HTML 5.0 errors
+
 ### Rate limit
 Not available
 
+### API methods
 | Method  | Name  | Description  | URL  |   |
 |---|---|---|---|---|
 | GET  | User  |   |  /api/User/502ca87e-c18a-43b8-a4d2-cea54b83ffac |   |
 | GET  | Steps  |   | /api/user/cc906675-aedb-4ef9-b1ac-7acb3e035f2c/steps  |   |
-| POST | Steps  |   | /api/user/502ca87e-c18a-43b8-a4d2-cea54b83ffac/steps |  ```Headers
+| POST | Steps  |   | /api/user/502ca87e-c18a-43b8-a4d2-cea54b83ffac/steps |  |
+
+
+### Headers
+```
 Content-Type	application/json
 Body
 raw (application/json)
@@ -61,4 +70,4 @@ raw (application/json)
 "Timestamp": "2017-04-01T19:01:55.714942+03:00", 
 "Count" : 1},{
 "Timestamp": "2017-04-01T19:01:55.714942+03:00", 
-"Count" : 1}, …] ```|
+"Count" : 1}, …] ```
