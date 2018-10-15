@@ -6,20 +6,20 @@ Salutogen android application is an intuitive and user-friendly activity monitor
 The application consists of these parts: 
 1.	Main user interface
 2.	Services
-a.	Data acquisition service
-b.	Sync service
+⋅⋅1.	Data acquisition service
+⋅⋅2.	Sync service
 3.	Database
 
 ##Main user interface
 The graphical user interface allows the administrator to set-up connection and user parameters such as the GUID (Global Unique Identifier) which identifies the user and the API URL to use for communication with the Salutogen Server.  Furthermore, it gives the user information about the application, such as errors or the last synchronization time. 
 The graphical user interface is divided into various activities
 1.	Main Activity
-a.	Gives useful information about the status of the application
+⋅⋅1.	Gives useful information about the status of the application
 2.	Settings Activity
-a.	Gives the user to edit the settings for the app. 
-b.	Ability to reset/clear all app data including the SQLite database.  
+⋅⋅1.	Gives the user to edit the settings for the app. 
+⋅⋅2.	Ability to reset/clear all app data including the SQLite database.  
 3.	User agreement Activity
-a.	Every time the GUID is changed, the new user must review the user agreement. User Argument shall contain information about how, what and why the data is collection and how the collected data is going to be used. 
+⋅⋅1.	Every time the GUID is changed, the new user must review the user agreement. User Argument shall contain information about how, what and why the data is collection and how the collected data is going to be used. 
 Language: all the language resources are in a separate file. Currently only in Swedish. 
 
 ## Services
@@ -53,7 +53,7 @@ Not available
 |---|---|---|---|---|
 | GET  | User  |   |  /api/User/502ca87e-c18a-43b8-a4d2-cea54b83ffac |   |
 | GET  | Steps  |   | /api/user/cc906675-aedb-4ef9-b1ac-7acb3e035f2c/steps  |   |
-| POST | Steps  |   | /api/user/502ca87e-c18a-43b8-a4d2-cea54b83ffac/steps |  Headers
+| POST | Steps  |   | /api/user/502ca87e-c18a-43b8-a4d2-cea54b83ffac/steps |  ```Headers
 Content-Type	application/json
 Body
 raw (application/json)
@@ -61,24 +61,4 @@ raw (application/json)
 "Timestamp": "2017-04-01T19:01:55.714942+03:00", 
 "Count" : 1},{
 "Timestamp": "2017-04-01T19:01:55.714942+03:00", 
-"Count" : 1}, …] |
-
-GET User
-/api/User/502ca87e-c18a-43b8-a4d2-cea54b83ffac
-
-GET Steps
-https://localhost:44337/api/user/cc906675-aedb-4ef9-b1ac-7acb3e035f2c/steps
-
-POST Steps
-https://localhost:44337/api/user/502ca87e-c18a-43b8-a4d2-cea54b83ffac/steps
-
-Headers
-Content-Type	application/json
-Body
-raw (application/json)
-[{
-"Timestamp": "2017-04-01T19:01:55.714942+03:00", 
-"Count" : 1},{
-"Timestamp": "2017-04-01T19:01:55.714942+03:00", 
-"Count" : 1}, …]
-
+"Count" : 1}, …] ```|
