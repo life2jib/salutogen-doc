@@ -63,11 +63,15 @@ Not available
 
 ### Headers
 ```
-Content-Type	application/json
-Body
+Content-Type:	application/json
+Body:
 raw (application/json)
 [{
-"Timestamp": "2017-04-01T19:01:55.714942+03:00", 
-"Count" : 1},{
-"Timestamp": "2017-04-01T19:01:55.714942+03:00", 
-"Count" : 1}, …] ```
+  "Timestamp": "2017-04-01T19:01:55.714942+03:00", 
+  "Count" : 1
+},
+{
+  "Timestamp": "2017-04-01T19:01:55.714942+03:00", 
+  "Count" : 1
+}, ...]
+```
