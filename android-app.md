@@ -5,20 +5,20 @@
 Salutogen android application is an intuitive and user-friendly activity monitor which collects data about the user's step activity and send them to the web server through the web API. 
 The application consists of these parts: 
 1.	Main user interface
-2.	Services
-⋅⋅1.	Data acquisition service
+2.	Services  
+⋅⋅1. Data acquisition service
 ⋅⋅2.	Sync service
 3.	Database
 
 ##Main user interface
 The graphical user interface allows the administrator to set-up connection and user parameters such as the GUID (Global Unique Identifier) which identifies the user and the API URL to use for communication with the Salutogen Server.  Furthermore, it gives the user information about the application, such as errors or the last synchronization time. 
 The graphical user interface is divided into various activities
-1.	Main Activity
+1.	Main Activity  
 ⋅⋅1.	Gives useful information about the status of the application
-2.	Settings Activity
+2.	Settings Activity  
 ⋅⋅1.	Gives the user to edit the settings for the app. 
 ⋅⋅2.	Ability to reset/clear all app data including the SQLite database.  
-3.	User agreement Activity
+3.	User agreement Activity  
 ⋅⋅1.	Every time the GUID is changed, the new user must review the user agreement. User Argument shall contain information about how, what and why the data is collection and how the collected data is going to be used. 
 Language: all the language resources are in a separate file. Currently only in Swedish. 
 
